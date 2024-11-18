@@ -23,7 +23,7 @@ new Address("237J Harvey Hall",
 "Menomonie", "WI", "54751")); 
 // Create an instance of the CreditCard class. 
 CreditCard visa = new CreditCard(owner, 
-CREDIT_LIMIT); 
+CREDIT_LIMIT);  
 // Display the credit card information.
 System.out.println(visa.getPersonals()); 
 System.out.println("Balance: " + visa.getBalance()); 

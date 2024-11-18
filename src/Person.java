@@ -31,6 +31,7 @@ home = residence;
 The toString method 
 @return Information about the person. 
  */ 
+ @Override
  public String toString() 
  { 
 return(firstName + " " + lastName + 
