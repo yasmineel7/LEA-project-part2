@@ -107,11 +107,11 @@ return value;
 public boolean equals (Money anotherMoney) {
    return this.dollars == anotherMoney.dollars && cents == anotherMoney.cents; 
 }
- // Document and write a toString method 
+ // Document and write a toString method  
  @Override
  public String toString(){
-    if (this.cents < 0)
-        return String.format("$%s", this.dollars,"0","%s", this.cents);
+    if (this.cents < 10)
+        return String.format("$%s.0%s", this.dollars, this.cents);
                 else
         return String.format("$%s.%s", this.dollars, this.cents);
 }
