@@ -12,47 +12,40 @@ public class CreditCard {
     private Money creditLimit;
     private Person owner;
     
-    CreditCard (CreditCard s){
+    public CreditCard (Person t , Money r){
     
-     this.owner = s.owner ;
-     this.creditLimit = s.creditLimit;
+     this.owner = t ;
+     this.creditLimit = r;
+     this.balance = new Money(0);
      //have to pass it to zero and use the copy constructer in the money class
      
  }
-    
-    
-
-    void CreditCard(Person owner, Money CREDIT_LIMIT) {
-        return  owner && creditLimit; 
-    }//credicard and credit limit
-    
     Money getBalance() {
-        return (this.balance);
+        return this.balance;
     }//calcul the new amount
     
-  
-
-    void charge(Money FOURTH_AMOUNT){ 
-        if (Money FOURTH_AMOUNT > this.creditLimit){
-        return System.out.println("Exceeds credit limit"));
+   Money getCreditLimit() {
+     return this.creditLimit;
     }
-        else 
-        return getBalance();
+
+    String getPersonals() {
+        return owner.toString();
+    }
+
+    boolean charge(Money FOURTH_AMOUNT){ 
+       if
     
+    }
+        else {
+          
+        }
     }
 
     Money payment(Money THIRD_AMOUNT) {
-       return getBalance();
-
+      
     }
 
-    Money getCreditLimit(Money creditLimit) {
-     return creditLimit;
-    }
-
-    Person getPersonals() {
-        return owner;
-    }
    
    
-}
+   
+} 
