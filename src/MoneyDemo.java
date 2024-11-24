@@ -66,5 +66,5 @@ System.out.println(THIRD_AMOUNT +
 FIRST_AMOUNT); 
 }
  } 
-}
+} 
 

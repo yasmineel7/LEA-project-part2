@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
+    
 /**
  *
  * @author yasmi
@@ -13,7 +14,7 @@ public class CreditCard {
     private Person owner;
     
     public CreditCard (Person t , Money r){
-    
+     
      this.owner = t ;
      this.creditLimit = r;
      this.balance = new Money(0);
@@ -32,20 +33,25 @@ public class CreditCard {
         return owner.toString();
     }
 
-    boolean charge(Money FOURTH_AMOUNT){ 
-       if
+    void charge(Money FOURTH_AMOUNT){
+        balance.add(FOURTH_AMOUNT);
+       if (balance.add(FOURTH_AMOUNT) > this.creditLimit){
+           System.out.println("Exceeds credit limit");
+           
+       }
+       else {
+           System.out.println("Charge" + FOURTH_AMOUNT);
+           
+       }
+       } 
+        
     
-    }
-        else {
-          
-        }
-    }
 
-    Money payment(Money THIRD_AMOUNT) {
+    void payment(Money THIRD_AMOUNT) {
+      balance.subtract(THIRD_AMOUNT);
+        System.out.println("Payment: " + THIRD_AMOUNT);
       
     }
 
-   
-   
-   
-} 
+}  
+ 
