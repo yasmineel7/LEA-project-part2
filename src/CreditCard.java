@@ -34,8 +34,8 @@ public class CreditCard {
     }
 
     void charge(Money FOURTH_AMOUNT){
-        balance.add(FOURTH_AMOUNT);
-       if (balance.add(FOURTH_AMOUNT) > this.creditLimit){
+      
+       if (){
            System.out.println("Exceeds credit limit");
            
        }
@@ -45,10 +45,8 @@ public class CreditCard {
        }
        } 
         
-    
-
     void payment(Money THIRD_AMOUNT) {
-      balance.subtract(THIRD_AMOUNT);
+     double total = balance - THIRD_AMOUNT;
         System.out.println("Payment: " + THIRD_AMOUNT);
       
     }
