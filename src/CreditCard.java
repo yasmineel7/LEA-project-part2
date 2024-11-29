@@ -22,31 +22,33 @@ public class CreditCard {
      
  }
     Money getBalance() {
-        return this.balance;
+        return new Money(balance);
     }//calcul the new amount
     
    Money getCreditLimit() {
-     return this.creditLimit;
+     return new Money(creditLimit);
     }
 
     String getPersonals() {
         return owner.toString();
     }
 
-    void charge(Money FOURTH_AMOUNT){
-      
-       if (){
+    boolean charge(Money FOURTH_AMOUNT){
+        Money newbalance = balance.add(FOURTH_AMOUNT);
+       if (newbalance.compareTo(creditLimit) > 0){
            System.out.println("Exceeds credit limit");
-           
+           return false;
        }
        else {
-           System.out.println("Charge" + FOURTH_AMOUNT);
-           
+           balance = newbalance;
+           System.out.println("Charge: " + FOURTH_AMOUNT);
+           return true;
        }
        } 
         
-    void payment(Money THIRD_AMOUNT) {
-     double total = balance - THIRD_AMOUNT;
+   public  void payment(Money THIRD_AMOUNT) {
+     Money newbalance = balance.subtract(THIRD_AMOUNT);
+     balance = newbalance;
         System.out.println("Payment: " + THIRD_AMOUNT);
       
     }
