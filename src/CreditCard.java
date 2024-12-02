@@ -17,7 +17,7 @@ public class CreditCard {
      
      this.owner = t ;
      this.creditLimit = r;
-     this.balance = new Money(0);
+     this.balance = new Money(0); 
      //have to pass it to zero and use the copy constructer in the money class
      
  }
