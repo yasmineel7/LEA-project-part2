@@ -16,7 +16,7 @@ final Money CREDIT_LIMIT = new Money(1000);
 final Money FIRST_AMOUNT = new Money(200); 
 final Money SECOND_AMOUNT = new Money(10.02); 
 final Money THIRD_AMOUNT = new Money(25); 
-final Money FOURTH_AMOUNT = new Money(990); 
+final Money FOURTH_AMOUNT = new Money(990);  
 // Create an instance of the Person class. 
 Person owner = new Person("Christie", "Diane", 
 new Address("237J Harvey Hall", 

@@ -35,6 +35,7 @@ zip = zipCode;
 The toString method 
 @return Information about the address. 
  */
+ @Override
  public String toString() 
  {
 return (street + ", " + city + 
